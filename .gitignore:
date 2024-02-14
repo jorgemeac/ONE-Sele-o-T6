@@ -1,0 +1,12 @@
+# Arquivos de build
+build/
+dist/
+
+# Arquivos de configuração
+node_modules/
+*.log
+.env
+
+# Arquivos temporários
+*.tmp
+*.temp
