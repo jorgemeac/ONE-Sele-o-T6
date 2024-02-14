@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desencriptador</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="redes-sociais" id="redes-sociais">
+            <div>
+                <a href="https://www.facebook.com/profile.php?id=61553870254665&mibextid=2JQ9oc" target="_blank">
+                    <i class="fa-brands fa-facebook-f"></i> Facebook
+                </a>
+            </div>
+            <div>
+                <a href="https://www.instagram.com/sintagma_cursos" target="_blank">
+                    <i class="fa-brands fa-instagram"></i> Instagram
+                </a>
+            </div>
+            <div>
+                <a href="https://www.linkedin.com/in/jorgemeac" target="_blank">
+                    <i class="fa-brands fa-linkedin-in"></i> Linkedin
+                </a>
+            </div>
+            <div>
+                <a href="https://github.com/jorgemeac" target="_blank">
+                    <i class="fa-brands fa-github"></i> GitHube
+                </a>
+            </div>
+
+        </div>
+
+        <div class="redes-sociais" id="redes-sociais__mediaquery">
+            <div>
+                <a href="https://www.facebook.com/profile.php?id=61553870254665&mibextid=2JQ9oc" target="_blank">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+            </div>
+            <div>
+                <a href="https://www.instagram.com/sintagma_cursos" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+            <div>
+                <a href="https://www.linkedin.com/in/jorgemeac" target="_blank">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+            </div>
+            <div>
+                <a href="https://github.com/jorgemeac" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+
+        </div>
+
+    </header>
+
+    <nav>
+        <a href="index.html">
+            <div class="logo">
+
+            </div>
+        </a>
+
+    </nav>
+
+    <main>
+        <div class="texto-main">
+            <textarea name="texto__main" rows="4" cols="20" id="texto-inicial"></textarea>
+        </div>
+
+        <div>
+            <div class="icone-texto">
+                <p>
+                    <span class="fa fa-circle-exclamation"></span>
+                    Por favor, utilize apenas letras em minúsculo e sem ecentuação como, por exemplo, ç, é, à, etc.
+                </p>
+            </div>
+            <div class="buttons">
+                <button class="button-criptografar"
+                    onclick="criptografarTexto(); mostrarDiv('dois')">Criptografar</button>
+                <button class="button-descriptografar"
+                    onclick="descriptografarTexto(); mostrarDiv('tres')">Descriptografar</button>
+            </div>
+        </div>
+    </main>
+
+    <aside>
+
+        <div class="div-page1__aside" id="um">
+            <div>
+                <img src="./assets/images/image-inicial.svg"
+                    alt="Imagem de um jovem observando um diamante com uma lupa. Ele está trajando blusa azul-escura sem manga, calça branca, meias pretas e possui cabelo azul escuro.">
+            </div>
+            <div>
+                <div>
+                    <h2>
+                        Nenhuma mensagem encontrada
+                    </h2>
+                </div>
+                <div>
+                    <p>
+                        Digite um texto que você deseja criptografar ou descriptografar e clique no botão
+                        correspondente.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="div-page2__aside" id="dois">
+            <div>
+                <h2>Seu texto criptografado é:</h2>
+                <p id="texto-criptografado"></p>
+            </div>
+            <div>
+                <div>
+                    <button class="button__copiar-texto" onclick="copiarTexto()">Copiar</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="div-page3__aside" id="tres">
+            <div>
+                <img src="./assets/images/image-final.svg"
+                    alt="Imagem de um jovem observando um diamante com uma lupa. Ele está trajando blusa verde-escura sem manga, calça azul-claro, meias pretas e possui cabelo branco.">
+            </div>
+            <div>
+                <div>
+                    <h2>
+                        Parabéns! Você transcedeu ao cumprir o nosso desafio! O texto descriptografado é:
+                    </h2>
+                </div>
+                <div>
+                    <p id="texto-descriptografado"></p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </aside>
+
+
+    <footer>
+        <p>
+            <strong>ONE - Fase Seleção T6</strong> &copy; 2024 | Adaptado por: <strong> Jorge Silva de Sousa </strong> -
+            Todos os direitos reservados.
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
